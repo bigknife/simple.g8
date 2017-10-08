@@ -34,4 +34,4 @@ version in ThisBuild := {
 }
 
 // client project
-lazy val simpleProject = publishableProject(".")
+lazy val rootProject = simpleProject

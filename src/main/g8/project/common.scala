@@ -34,4 +34,9 @@ object common {
     Project(name, file(name))
       .enablePlugins(JettyPlugin, TomcatPlugin)
       .settings(commonSettings: _*)
+
+  def simpleProject: Project =
+    Project("root", file("."))
+      .settings(commonSettings: _*)
+  
 }
