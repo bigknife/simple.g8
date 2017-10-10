@@ -38,5 +38,5 @@ object common {
   def simpleProject: Project =
     Project("root", file("."))
       .settings(commonSettings: _*)
-  
+
 }
