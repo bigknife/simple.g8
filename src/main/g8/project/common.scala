@@ -8,8 +8,7 @@ object common {
     organization := "ues2",
     version := "0.0.1",
     publishArtifact in (Compile, packageDoc) := false,
-    sources in (Compile, doc) := Seq.empty,
-    ensimeIgnoreMissingDirectories := true
+    sources in (Compile, doc) := Seq.empty
   )
 
   val publishSettings = Seq(

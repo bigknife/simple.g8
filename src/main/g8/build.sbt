@@ -19,7 +19,7 @@ scalacOptions in ThisBuild ++= Seq(
 )
 
 scalacOptions in (Compile, console) ~= (_ filterNot (_ contains "paradise"))
-
+ensimeIgnoreMissingDirectories := true
 // customize version
 /* if you wanna add git commit hash to artifact id, uncomment this
 val gitHeadCommitSha = settingKey[String]("current git commit SHA")
